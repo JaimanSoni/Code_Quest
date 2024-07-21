@@ -7,12 +7,48 @@
     font-family: "TurretMedium";
     src: url("./fonts/Turret_Road/TurretRoad-Medium.ttf");
 }
+@font-face {
+    font-family: "TurretRegular";
+    src: url("./fonts/Turret_Road/TurretRoad-Light.ttf");
+}
+
+@font-face {
+    font-family: "JuraMedium";
+    src: url("./fonts/Jura/static/Jura-Medium.ttf");
+}
+@font-face {
+    font-family: "RetroPixel";
+    src: url("./fonts/RetroPixel.ttf");
+}
 
 
 
-.hero{
-    background-image: url("./assets/bg.jpg");
+.page2{
+    background-image: url("./assets/bgpg2.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.active{
+    transition: 1s;
+    position: absolute;
+    width: 450px;
+}
+
+.deactive{
+    transition: 1s;
+    width: 350px;
+}
+
+
+
+
+@media screen and (max-width: 760px) {
+    .active{
+        width: 250px;
+    }
+    .deactive{
+        width: 200px;
+    }
 }
