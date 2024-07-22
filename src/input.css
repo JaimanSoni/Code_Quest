@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
 
 @font-face {
     font-family: "TurretMedium";
@@ -11,39 +11,129 @@
     font-family: "TurretRegular";
     src: url("./fonts/Turret_Road/TurretRoad-Light.ttf");
 }
-
 @font-face {
-    font-family: "JuraMedium";
-    src: url("./fonts/Jura/static/Jura-Medium.ttf");
-}
-@font-face {
-    font-family: "RetroPixel";
-    src: url("./fonts/RetroPixel.ttf");
+    font-family: "Jura";
+    src: url("./Jura-VariableFont_wght.ttf");
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
 
-
+/* body{
+    background-color: black;
+} */
 .page2{
-    background-image: url("./assets/bgpg2.png");
+    background-image: url("./assets/folded-paper-texture-folded-black-paper-texture-background-high-resolution-texture-folded-paper\ 1.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.main{
+    height: fit-content;
 }
 
 .active{
     transition: 1s;
     position: absolute;
-    width: 450px;
+    opacity:1;
+    width: 500px;
+    z-index: 1000;
+}
+.active:hover p{
+display: block;
 }
 
 .deactive{
     transition: 1s;
-    width: 350px;
+    width: 400px;
+    opacity: 0.5;
 }
+.deactive p{
+    display: none;
+}
+#vr-image{
+    transition: all ease 0.5s;
+}
+#vr-image:hover{
 
+    filter: grayscale(100%);
+    transition: all ease 0.5s;
+}
+.nav-links ul li:hover{
+    transition: all ease 0.3s;
+    opacity: 0.4;
+}
+.page4{
+background-color: beige;
+  font-family: "Jura", sans-serif;
+  height: 100vh;
+  padding: 30px;
+  column-gap:20px ;
+  align-items: center;
+}
+.page4 img{
 
+ height: 400px;
+ object-fit: cover;
+    
+}
+.readmore{
+    padding: 20px 0;
+}
+.page4 .scooter2{
+height: 200px;
+}
+.page5{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    column-gap: 10px; 
+}
+.page5-content{
+    align-content: center;
+}
+.page5 p{
+    font-size: 4vw;
+    font-family: 'TurretRegular', sans-serif;
+}
+.page5 iframe{
+width: 900px;
+height: 900px;
+align-self: center;
+}
+.page5-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page5 .qrcode img{
+    align-self: center;
+    height: 300px;
+}
+.page5 .qr-text p{
+    font-size: 20px;
+}
+#footer {
+    font-family: 'Jura';
+    height: fit-content;
+    padding: 100px;
+    display: flex;
+    column-gap: 300px;
+    margin: 0;
+    background-color: black;
+    color: white;
+    position: relative;
+  }
+  
+  
 
-
+  .copyright-text {
+    position: absolute;
+    top: 90%;
+    text-transform: uppercase;
+    font-family: 'Jura';
+  }
 @media screen and (max-width: 760px) {
     .active{
         width: 250px;
@@ -51,4 +141,13 @@
     .deactive{
         width: 200px;
     }
+}
+@media screen and (max-width: 950px) {
+.page5{
+    flex-direction: column-reverse;
+}
+.text-\[300px\]{
+    font-size: 150px;
+    padding: 100px 0;
+}
 }

@@ -623,9 +623,7 @@ video {
   min-height: 900px;
 }
 
-.min-h-screen {
-  min-height: 100vh;
-}
+
 
 .w-\[100\%\] {
   width: 100%;
@@ -741,6 +739,10 @@ video {
   font-size: 125px;
 }
 
+.text-\[300px\] {
+  font-size: 300px;
+}
+
 .text-\[17\.5px\] {
   font-size: 17.5px;
 }
@@ -756,14 +758,17 @@ video {
 .text-\[30px\] {
   font-size: 30px;
 }
-
+.text-\[50px\] {
+  font-size: 50px;
+}
 .text-\[6vw\] {
   font-size: 6vw;
 }
-
 .text-\[8vw\] {
   font-size: 8vw;
 }
+
+
 
 .font-bold {
   font-weight: 700;
